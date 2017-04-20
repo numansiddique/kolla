@@ -1,0 +1,7 @@
+FROM {{ namespace }}/{{ image_prefix }}openvswitch-ovn-base:{{ tag }}
+MAINTAINER {{ maintainer }}
+
+{% block openvswitch_ovn_controller_header %}{% endblock %}
+
+{% block openvswitch_ovn_controller_footer %}{% endblock %}
+{% block footer %}{% endblock %}
